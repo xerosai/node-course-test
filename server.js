@@ -60,6 +60,8 @@ app.get('/bad', (req, res) => {
     });
 });
 
-app.listen(3431, () => {
-    console.log(`Listening on port: 3431`);
+const PORT = process.env.PORT || 3431;
+
+app.listen(PORT, () => {
+    console.log(`Listening on port: ${PORT}`);
 });
